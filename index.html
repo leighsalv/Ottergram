@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!--tells browser which version of HTML it's written in-->
+
+<!-- server mode in terminal cmd: browser-sync start --server --files "stylesheets/*.css, *.html" -->
+<html>
+  <head> <!--holds info about doc and how the browser should handle the doc i.e. what CSS/Javascript files are used-->
+    <meta charset="utf-8"> <!--important esp if expecting international traffic bc most browsers can interpret this-->
+    <link rel="icon" type="image/png" sizes="70x70" href="/img/otterfavicon.png"> <!-- favicon on tab -->
+    <title>ottergram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css"> <!--href: browser sends request to server for styles.css file in the stylesheets folder-->
+  </head>
+  <body>
+    <header>
+      <h1 class="logo-text">ottergram</h1>
+    </header>
+    <ul class="thumbnail-list"> <!--unordered list (bulleted)-->
+      <li class="thumbnail-item"> <!--list-->
+        <a href="#"> <!--a: anchor tag; makes something clickable to take user to another page-->
+                    <!--href: resource the anchor tag points to - usually a web address; '#'' is just a dummy tag / makes browser scroll to top-->
+          <img class="thumbnail-image" src="img/otter1.jpg" alt="Barry the Otter"> <!--alt: txt that replaces img when unable to load-->
+          <span class="thumbnail-title">Barry</span>
+        </a>
+      </li>
+
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter2.jpg" alt="Robin the Otter">
+          <span class="thumbnail-title">Robin</span>
+        </a>
+      </li>
+
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter3.jpg" alt="Maurice the Otter">
+          <span class="thumbnail-title">Maurice</span>
+        </a>
+      </li>
+
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter4.jpg" alt="Lesley the Otter">
+          <span class="thumbnail-title">Lesley</span>
+        </a>
+      </li>
+
+      <li class="thumbnail-item">
+        <a href="#">
+          <img class="thumbnail-image" src="img/otter5.jpg" alt="Barbara the Otter">
+          <span class="thumbnail-title">Barbara</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
